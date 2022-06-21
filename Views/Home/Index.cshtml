@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1>Random Number = </h1>
+    <h2>Count: @Context.Session.GetInt32("Count")</h2>
+    <form action="Redir">
+        <label for="Num">New Random Num</label>
+        <input type="submit" value="Generate">
+    </form>
+</div>
